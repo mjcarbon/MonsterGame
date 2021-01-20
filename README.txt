@@ -34,4 +34,25 @@ print(winner.attacks) ---------> returns name of attacks used and their damage p
 print(winner.exp) ---------> returns experience level
 print(winner.max_hp) ---------> returns max health level
 print(moves) ---------> returns name of moves used to win
+--------------------
+Example Input:
 
+a = Dragon("a", 18)
+b = Ghost("b", 18)
+a.add_attack("ice_storm")
+b.add_attack("double_hit")
+b.remove_attack("wait")
+round1, winner, moves = monster_fight(a, b)
+print(round1)
+print(winner.name)
+print(winner.attacks)
+print(winner.exp)
+print(winner.max_hp)
+print(moves)
+round1, winner, moves = monster_fight(a, b)
+print(round1)
+print(winner.name)
+print(winner.attacks)
+print(winner.exp)
+print(winner.max_hp)
+print(moves)

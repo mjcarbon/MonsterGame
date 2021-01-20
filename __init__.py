@@ -1,5 +1,5 @@
-import Fight
-import Sorter
+from Fight import monster_fight
+from Sorter import most_occurences,sort_dict,sort_dict_over4
 
 class Monster():
     def __init__(self, name, max_hp=20, type="normal"):
@@ -224,26 +224,3 @@ class Ghost():
             self.max_hp += 5
             self.increment = 0
 
-
-a = Dragon("a", 18)
-b = Ghost("b", 18)
-a.add_attack("ice_storm")
-a.remove_attack("wait")
-b.add_attack("double_hit")
-b.remove_attack("wait")
-a.add_attack("double_hit")
-a.add_attack("fire_storm")
-a.add_attack("ice_storm")
-round1, winner, moves = monster_fight(a, b)
-print(a.attacks)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-round1, winner, moves = monster_fight(a, b)
-print(a.exp)
-print(a.attacks)
